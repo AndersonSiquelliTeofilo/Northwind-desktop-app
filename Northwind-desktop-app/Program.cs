@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.Entity;
+using Northwind_desktop_app.Data;
 
 namespace Northwind_desktop_app
 {
@@ -10,6 +9,9 @@ namespace Northwind_desktop_app
     {
         static void Main(string[] args)
         {
+            NorthwindContext db = new NorthwindContext();
+            
         }
     }
+        
 }
