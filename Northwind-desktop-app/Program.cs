@@ -10,7 +10,7 @@ namespace Northwind_desktop_app
         static void Main(string[] args)
         {
             NorthwindContext db = new NorthwindContext();
-            
+            Console.WriteLine(db.Employees.FirstOrDefault());            
         }
     }
         
