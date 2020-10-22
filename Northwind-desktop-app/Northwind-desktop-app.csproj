@@ -56,6 +56,9 @@
   <ItemGroup>
     <Compile Include="Data\NorthwindContext.cs" />
     <Compile Include="Models\Employees.cs" />
+    <Compile Include="Models\EmployeeTerritories.cs" />
+    <Compile Include="Models\Region.cs" />
+    <Compile Include="Models\Territories.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

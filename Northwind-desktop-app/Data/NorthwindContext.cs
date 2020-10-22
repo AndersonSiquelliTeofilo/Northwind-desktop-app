@@ -11,5 +11,7 @@ namespace Northwind_desktop_app.Data
         }
 
         public DbSet<Employees> Employees { get; set; }
+        public DbSet<EmployeeTerritories> EmployeeTerritories { get; set; }
     }
 }
+
