@@ -11,23 +11,22 @@ namespace Northwind_desktop_app
         static void Main(string[] args)
         {
             NorthwindContext db = new NorthwindContext();
-            var Test = db.Employees
+            var Test = db.Orders
                 .Join(
-                db.EmployeeTerritories,
-                employees => employees.EmployeeID,
-                employeeTerritories => employeeTerritories.EmployeeID,
-                (employees, employeeTerritories) => new
+                db.Shippers,
+                orders => orders.ShipVia,
+                shippers => shippers.ShipperID,
+                (orders, shippers) => new
                 {
-                    EmployeeID = employees.EmployeeID,
-                    FirstName = employees.FirstName,
-                    TerritoryID = employeeTerritories.TerritoryID
+                    OrderID = orders.OrderID,
+                    ShipperID = shippers.ShipperID
                 }
-                ).ToList();
+                ).ToList();;
 
             foreach(var list in Test)
             {
-                Console.WriteLine("EmployeeID = {0} \t FirstName = {1} \t TerritoryID = {2}",
-                                   list.EmployeeID, list.FirstName, list.TerritoryID);
+                Console.WriteLine("OrderID = {0} \t ShipperID = {1}",
+                                   list.OrderID, list.ShipperID);
             }
 
         }

@@ -55,9 +55,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\NorthwindContext.cs" />
+    <Compile Include="Models\CustomerCustomerDemo.cs" />
+    <Compile Include="Models\CustomerDemographics.cs" />
+    <Compile Include="Models\Customers.cs" />
     <Compile Include="Models\Employees.cs" />
     <Compile Include="Models\EmployeeTerritories.cs" />
+    <Compile Include="Models\Orders.cs" />
     <Compile Include="Models\Region.cs" />
+    <Compile Include="Models\Shippers.cs" />
     <Compile Include="Models\Territories.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
